@@ -25,3 +25,23 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Setup Bootstrap for the project
+
+Install bootstrap 4, run following command
+- `npm install bootstrap`
+[You will notice the bootstrap will be added to the package.json dependencies]
+
+Import the CSS
+-  Add link to bootstrap css in angular.json / styles section `node_modules/bootstrap/dist/css/bootstrap.min.css`
+[There is also alternative way to do this by importing bootstrap.min.css directly in the style.css file]
+
+Install angular wrapper library for Bootstrap  
+If we need to use bootstrap javascript components, it will require JQuery to be installed. So, the better option is to use the angular wrapper "ngx-bootstrap"
+- `npm install ngx-bootstrap --save`
+
+References for Bootstrap 
+- https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/, 
+- https://www.freecodecamp.org/news/how-to-add-bootstrap-css-framework-to-an-angular-application/
+- https://ng-bootstrap.github.io/#/getting-started (Check for the angular, bootstrap dependency chart)
