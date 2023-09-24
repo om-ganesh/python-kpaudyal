@@ -39,9 +39,20 @@ Import the CSS
 
 Install angular wrapper library for Bootstrap  
 If we need to use bootstrap javascript components, it will require JQuery to be installed. So, the better option is to use the angular wrapper "ngx-bootstrap"
-- `npm install ngx-bootstrap --save`
+- `npm install ngx-bootstrap@10 --save`  
+<em>Note</em>: Use the compatibile version for your angular
 
-References for Bootstrap 
-- https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/, 
-- https://www.freecodecamp.org/news/how-to-add-bootstrap-css-framework-to-an-angular-application/
+Add the required bootstrap modules in app.module.ts  
+ngx-bootstrap contains variety of modules that can be used in your angular project  
+For example, we want to use Dropdown, and  Tooltip components.
+
+## Important Links
+When we are working with the fe frameworks and importing various node modules, we should match the compatibility
+
+Compatibility between bootstrap and angular  
+- https://valor-software.com/ngx-bootstrap/#/documentation#getting-started
 - https://ng-bootstrap.github.io/#/getting-started (Check for the angular, bootstrap dependency chart)
+
+Reference Articles
+- https://loiane.com/2017/08/how-to-add-bootstrap-to-an-angular-cli-project/ (Good Article) 
+- https://www.freecodecamp.org/news/how-to-add-bootstrap-css-framework-to-an-angular-application/
